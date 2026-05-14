@@ -1,6 +1,12 @@
 $primary-color: #333;
 $white: #fff;
-$navbar: 80px;
+$navbar-height: 80px;
+
+$bg-home-color: #0b51d2;
+$bg-about-color: #25379f;
+$bg-promise-color: #020144;
+$bg-services-color: #549725;
+$bg-contact-color: #b55303;
 
 @mixin mobile {
     @media (max-width: 768px) {

@@ -1,10 +1,17 @@
-@import '../styles/variables';
+@import '../../styles/stylesvariables.scss';
 
 .full-page-section {
   width: 100%;
-  height: calc(100vh - #{$navbar-height});
+  height: 100vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+
+
+  @include mobile {
+    height: auto;
+    padding-top: 40px;
+  }
 }
+

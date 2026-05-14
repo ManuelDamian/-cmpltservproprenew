@@ -1,0 +1,36 @@
+@import '/src/styles/stylesvariables.scss';
+
+
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    height: 100%;
+    display: block;
+    overflow-y: scroll;
+    
+}
+
+.bg-home {
+    background-color: $bg-home-color;
+}
+
+.bg-about {
+    background-color: $bg-about-color;
+} 
+
+.bg-promise {
+    background-color: $bg-promise-color;
+}
+
+.bg-services {
+    background-color: $bg-services-color;
+}
+
+.bg-contact {
+    background-color: $bg-contact-color;
+}
