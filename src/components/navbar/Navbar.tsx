@@ -19,7 +19,7 @@ export const Navbar = () => {
         <a href="mailto:Service@completepropserv.com">For service please email: Service@completepropserv.com</a>
         <a href="https://www.linkedin.com/company/complete-property-services-inc/about/" target="_blank" rel="noreferrer">
           <img
-            src="/public/linkedinsvg.svg"
+            src="linkedinsvg.svg"
             alt="LinkedIn Logo"
             className="social-icon"
           />
