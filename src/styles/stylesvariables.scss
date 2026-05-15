@@ -1,12 +1,23 @@
-$primary-color: #333;
-$white: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+$font-primary: 'Outfit', sans-serif;
+
+$primary-color: #0f172a;
+$secondary-color: #3b82f6; 
+$accent-color: #10b981; 
+$text-light: #ffffff;
+$text-muted: #94a3b8;
+$white: #ffffff;
 $navbar-height: 80px;
 
-$bg-home-color: #0b51d2;
-$bg-about-color: #25379f;
-$bg-promise-color: #020144;
-$bg-services-color: #549725;
-$bg-contact-color: #b55303;
+$bg-main: #0c0c0c;
+$bg-home-color: #0c0c0c;
+$bg-about-color: #2f6e44;
+$bg-services-color: #0c0c0c;
+$bg-promise-color: #44a866;
+$bg-contact-color: #0c0c0c;
+
+$color-service-line: #FA0505;
 
 @mixin mobile {
     @media (max-width: 768px) {
@@ -49,4 +60,3 @@ $bg-contact-color: #b55303;
         @content;
     }
 }
-
