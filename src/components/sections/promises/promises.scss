@@ -1,0 +1,72 @@
+@use "../../../styles/stylesvariables.scss";
+
+// Promise Section
+.bg-promise {
+    background: stylesvariables.$bg-promise-color;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .promise-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+
+        @include stylesvariables.tablet {
+            grid-template-columns: 1fr;
+        }
+
+        .promise-text {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include stylesvariables.mobile {
+                padding: 2rem;
+            }
+
+            .header {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                color: stylesvariables.$white;
+            }
+
+            .item {
+                margin-bottom: 1.5rem;
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid stylesvariables.$accent-color;
+
+                .title {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+                .text {
+                    color: stylesvariables.$text-muted;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .promise-img {
+            height: 100%;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0;
+                box-shadow: none;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@use "../../../styles/stylesvariables.scss";
+
+// Home Section
+.bg-home {
+    background: stylesvariables.$bg-home-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+
+    .main-logo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.3));
+    }
+
+    .slogan {
+        color: #44a866;
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    .service-line {
+        color: stylesvariables.$color-service-line;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    img {
+        max-width: 800px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        margin-bottom: 3rem;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+
+    .welcome {
+        color: #44a866;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle {
+        color: stylesvariables.$white;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .description {
+        color: stylesvariables.$white;
+        max-width: 800px;
+        line-height: 1.8;
+    }
+}
